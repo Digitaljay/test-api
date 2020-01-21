@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from firebase import firebase
 app = Flask(__name__)
@@ -10,4 +11,4 @@ def hello_world():
     return str(d)
 
 
-app.run(debug=True)
+app.run(host='0.0.0.0', port=os.getenv('PORT', 5000), debug=True)
