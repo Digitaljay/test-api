@@ -11,4 +11,4 @@ def hello_world():
     return str(d)
 
 
-app.run(host='0.0.0.0', port=os.getenv('PORT', 5000), debug=True)
+app.run(host='127.0.0.1', port=os.getenv('PORT', 5000), debug=True)
